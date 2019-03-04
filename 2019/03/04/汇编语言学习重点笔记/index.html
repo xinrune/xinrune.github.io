@@ -19,7 +19,9 @@
     <meta name="keywords" content>
 
 
-    <meta name="description" content>
+    <meta name="description" content="汇编语言从0开始 到C语言汇编语言从0开始 重制版这是王爽汇编语言课程学习笔记。
+寄存器通用寄存器16bit的通用，数据寄存器：AX，BX，CX，DX
+为了兼容，又分8bit的寄存器height...">
 
 
 
@@ -31,7 +33,7 @@
     <!--Title-->
 
 
-<title>Archives: 2019 | Hexo</title>
+<title>汇编语言学习重点笔记 | Hexo</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -132,170 +134,120 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div id="main">
-     <div class="timebox">
-          <div class="timeline">
-              <ul>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="汇编语言学习重点笔记">
+            
+	            汇编语言学习重点笔记
+            
+        </h1>
+        <div class="post-meta">
+    
+        <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+            
+        </span>
+    
+
+    
+        <span class="fa-wrap">
+            <i class="fa fa-tags"></i>
+            <span class="tags-meta">
                 
-                
-                    
-                    
-                        
-                            
-                            <h2>2019</h2>
-                        
-                        
-                          <li>
-                        
-                            <h3>
-                              04<span>03月</span>
-                            </h3>
-                            <a href="/2019/03/04/汇编语言学习重点笔记/" title="汇编语言学习重点笔记" target="_blank">汇编语言学习重点笔记</a>
-                        </li>
-                    
-                
-                    
-                    
-                        
-                        
-                          <li>
-                        
-                            <h3>
-                              03<span>03月</span>
-                            </h3>
-                            <a href="/2019/03/03/第一个博客/" title="第一个博客" target="_blank">第一个博客</a>
-                        </li>
-                    
-                
-                    
-                    
-                        
-                        
-                          <li>
-                        
-                            <h3>
-                              03<span>03月</span>
-                            </h3>
-                            <a href="/2019/03/03/hello-world/" title="Hello World" target="_blank">Hello World</a>
-                        </li>
-                    
-                
-              </ul>
-          </div>
-    </div>
+            </span>
+        </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2019/03/04</span>
+        </span>
+        
+    
 </div>
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p><a href="https://study.163.com/course/introduction/1640004.htm" target="_blank" rel="noopener">汇编语言从0开始 到C语言</a><br><a href="https://study.163.com/course/introduction/1004561002.htm" target="_blank" rel="noopener">汇编语言从0开始 重制版</a><br>这是王爽汇编语言课程学习笔记。</p>
+<h2 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h2><h3 id="通用寄存器"><a href="#通用寄存器" class="headerlink" title="通用寄存器"></a>通用寄存器</h3><p>16bit的通用，数据寄存器：AX，BX，CX，DX</p>
+<p>为了兼容，又分8bit的寄存器height和low：<br>AX = AH + AL<br>BX = BH + BL<br>CX = CH + CL<br>DX = DH + DL</p>
+<h3 id="地址寄存器："><a href="#地址寄存器：" class="headerlink" title="地址寄存器："></a>地址寄存器：</h3><p>段地址寄存器：DS，ES，SS，CS<br>偏移地址寄存器：SP，DP，SI，DI，IP<br>基础地址 = 段地址 x 16（10H）<br>物理地址 = 基础地址 + 偏移地址</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>1byte = 8bit<br>字节型数据    =1byte<br>字型数据    =2byte</p>
+<h2 id="汇编指令"><a href="#汇编指令" class="headerlink" title="汇编指令"></a>汇编指令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mov ax,bx	将bx内存地址传给ax</span><br><span class="line">mov ax,[bx]	将bx内存地址的数据传给ax</span><br><span class="line"></span><br><span class="line">add ax,bx</span><br></pre></td></tr></table></figure>
+<p><img src="./tupian.jpg" alt="aaaaaaaab"><br><img src="./images/tupian.jpg" alt="aaaaaaaab"><br><img src="../images/tupian.jpg" alt="aaaaaaaab"><br><img src="./../images/tupian.jpg" alt="aaaaaaaab"></p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+        <a href="/2019/03/03/第一个博客/" class="next-post btn btn-default" title="第一个博客">
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">第一个博客</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+	
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+            appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: ''.toLowerCase()
+        })
+    </script>
+
+
+    </div>
+
+
 
 
 
                 </main>
                 
-                    
-    <aside class="col-md-4 sidebar">
-        
-        
+                    <aside id="article-toc" role="navigation" class="col-md-4">
     <div class="widget">
-        <h3 class="title">Search</h3>
-        <div id="search-form">
-            <div id="result-mask" class="hide"></div>
-            <div class="search-area">
-                
-                    <input id="search-key" type="search" autocomplete="off" placeholder="Search What？">
-                    <button type="button" class="search-form-submit" id="search-local">localSearch</button>
-                
-                
-            </div>
-            <div id="result-wrap" class="hide">
-                <div id="search-result"></div>
-            </div>
-            <div class="hide">
-                <template id="search-tpl">
-                    <div class="item">
-                        <a href="/{path}" title="{title}">
-                            <div class="title">{title}</div>
-                            <div class="content">{content}</div>
-                        </a>
-                    </div>
-                </template>
-            </div>
-        </div>
+        <h3 class="title">Table of Contents</h3>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#寄存器"><span class="toc-text">寄存器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通用寄存器"><span class="toc-text">通用寄存器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#地址寄存器："><span class="toc-text">地址寄存器：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#汇编指令"><span class="toc-text">汇编指令</span></a></li></ol>
+        
     </div>
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Notification</h3>
-        <div class="notification">
-            <p>
-    主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br>
-    主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title target="_blank">常见使用问题</a> <br>
-    支持主题：<a href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
-</p>
-        </div>
-    </div>
-
-        
-        
-    <div class="widget">
-      <h3 class="title">Social</h3> 
-        <div class="content social">
-            
-	            <a href="//github.com/shenliyang" rel="external nofollow" title="Github" target="_blank">
-			    	<i class="git fa fa-git"></i>
-			    </a>
-            
-	            <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
-			    	<i class="envelope-o fa fa-envelope-o"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
-			    	<i class="qq fa fa-qq"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="微信" target="_blank">
-			    	<i class="weixin fa fa-weixin"></i>
-			    </a>
-            
-	            <a href="/" rel="external nofollow" title="QQ群" target="_blank">
-			    	<i class="users fa fa-users"></i>
-			    </a>
-            
-	            <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-			    	<i class="feed fa fa-feed"></i>
-			    </a>
-            
-        </div>
-    </div>
-
-
-        
-        
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/"><i class="fa" aria-hidden="true">2019年03月</i></a><span class="archive-list-count">3</span></li></ul>
-    </div>
-
-
-        
-        
-
-        
-        
-    <div class="widget">
-        <h3 class="title">Friends</h3>
-        <div class="content friends-link">
-        
-            <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">Hexo官网</a>
-        
-        </div>
-    </div>
-
-
-        
-    </aside>
+</aside>
 
                 
             </div>
@@ -338,8 +290,6 @@
     </div>
 </div>
 
-
-	<script src="/js/search.js?rev=@@hash"></script>
 
 
 
